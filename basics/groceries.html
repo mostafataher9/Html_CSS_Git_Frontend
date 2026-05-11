@@ -1,0 +1,50 @@
+<!--command + p or ctrl v to see command sr=earch in vscode you can search for files and if you write >-->
+<!--this way is recommended to use as html structure to be beneficial for google-->
+<!--http://127.0.0.1:5500/basics/groceries.html http protocol for communication btw browser and server so here thr browser send a request via http protocol to the to the server ip address hosting that is 127.0.0.1 (the local host / local machine) through port 5500  -->
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--Contains the metadata the data for the browser-->
+      <!-- the structure of html must be suitable with google for the searching abt website in google , google search for h1 tag in html  which represents the title and also search for titles in html page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <!--contains the actual data--> <!-- we can use anchors to go place in the same page-->
+   <header id="top_header">
+     <h1> Weekly Groceries Shopping List</h1>
+     <p>this is the content of the page</p>
+     <a href="#special_section"> Go to special section</a> <!-- # is used to link to the id of the element in the same page it takes you to the element -->
+   </header>
+    <main>
+        <section id="special_section">
+             <h2>Special Section</h2>
+             <p>this is the content of the section</p>
+        </section>
+        <!--listing types-->
+        <!-- TO  KNOW MORE ABOUT consepts hover in the tag you see MDN reference you click it open you see html documentation-->
+        <section>
+            <h2> Shopping Instructions</h2>
+            <ol start="1" type="A">
+                <!-- you can make list inside list elements-->
+                <li>Take Money</li>
+                    <ol start="1" type="i">
+                        <li>Check the groceries</li>
+                        <li>Calculate the sum of items</li>
+                        <li>take enough amount to pay</li>
+                          <ul>
+                            <li>take dollar</li>
+                            <li>take lira</li>
+                          </ul>
+                    </ol>
+                <li>Drive to mall</li>
+                <li>Get all items</li>
+            </ol>
+        </section>
+        <footer>
+           <a href="#top_header"> Go to top</a> <!-- # is used to link to the id of the element in the same page -->
+           <br/>
+           <a href="../index.html"> Go Back</a> <!--index.html and /index.html and ../index.html the three are correct the / alone is the relative path -->
+        </footer>
+</body>
+
+</html>

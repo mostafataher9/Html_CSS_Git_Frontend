@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> <!--contains the actual data-->
+    <header>
+        <h1> Musical Concert Coming Soon </h1>
+        <p> lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate! </p>
+    </header>
+    <main>
+        <section>
+            <h1> Welcome to the University </h1>
+            <form action="basics/login-form" method="POST">
+                <!-- This is a simple student enrollment form, name attribute is unique identifier for every input field -->
+                <fieldset> <!-- This is a container for grouping related form elements and it is for design purposes -->
+                    <legend>Login Student Information</legend>
+                    <!-- The type attribute specifies the kind of input field can be text , number, password, email....-->
+                    <!-- the id attribuute of the input field is used to associate the label with the input field so for attribute has same value as id-->
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" name="username" value="Mot" placeholder="Enter your name" />
+                      <br />
+                    <br />
+                    <label for="password"> Password </label>
+                    <input type="password" id="password" name="password" value="password123"
+                        placeholder="Enter your password" />
+
+                      <br />
+                    <br /> <!-- their is  3 types of buttton submit, reset, button-->
+                    <button type="submit">Submit</button>
+                    <!-- once submit data go to the url in the action attribute in form element and method either get or post-->
+                    <button type="reset">Reset</button>
+                    <!-- return inputs to initial values if their is in input a value attrribute it eill be the initial value-->
+                </fieldset>
+                 
+              <p>
+                Do not have account? <a href="enroll-form.html">Register here</a>
+            </p>
+     
+            </form>
+        </section>
+    </main>
+</body>
+</html>

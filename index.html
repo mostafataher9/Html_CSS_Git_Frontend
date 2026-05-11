@@ -18,6 +18,30 @@
      </ul>
   </header>
   <hr />
+  <main>
+        <section>
+            <ul id="list-for-data">
+
+            </ul>
+        </section>
+  </main>
+  <!--script of js I can put at the end of the body or at the end of the head -->
+  <script>
+     const data=[
+              {  id:1, name: "Alice"},
+              {  id:2, name: "Bob"},
+              {  id:3, name: "Charlie"}
+     ];
+    //loop through the data and create list items for each object in the data array and append them to the list element in the html
+   document.addEventListener("DOMContentLoaded", function() { // this event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+        const listElement = document.getElementById("list-for-data");
+        data.forEach(item => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `ID: ${item.id}, Name: ${item.name}`;
+            listElement.appendChild(listItem);
+        });
+    });
+  </script>
 
 </body>
 
